@@ -98,10 +98,19 @@
 
         autocad {
             bindings = <
-&kp ESCAPE  &kp LS(Q)  &kp W      &kp LS(E)  &kp LS(R)  &kp LS(T)    &kp  &kp  &kp  &kp  &kp  &kp
-&kp         &kp LS(A)  &kp LS(S)  &dance_D   &kp LS(F)  &kp          &kp  &kp  &kp  &kp  &kp  &kp
-&kp         &dance_Z   &kp LS(X)  &dance_C   &dance_V   &kp          &kp  &kp  &kp  &kp  &kp  &tog 4
-                                  &kp        &kp        &kp          &kp  &kp  &kp
+&kp ESCAPE  &kp LS(Q)  &kp W      &kp LS(E)  &kp LS(R)  &kp LS(T)    &none  &none  &none  &none  &none  &none
+&none       &kp LS(A)  &kp LS(S)  &dance_D   &kp LS(F)  &none        &none  &none  &none  &none  &none  &none
+&none       &dance_Z   &kp LS(X)  &dance_C   &dance_V   &none        &none  &none  &none  &none  &none  &tog 4
+                                  &none      &none      &none        &none  &none  &none
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
