@@ -58,6 +58,13 @@
             #binding-cells = <0>;
             bindings = <&kp F7>, <&kp LA(LS(F7))>;
         };
+
+        space_win: space_win {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SPACE_WIN";
+            #binding-cells = <0>;
+            bindings = <&kt SPACE>, <&kp LEFT_WIN>;
+        };
     };
 
     keymap {
@@ -71,10 +78,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp GRAVE            &kp Q  &kp W  &kp E                &kp R               &kp T        &kp Y         &kp U      &kp I          &kp O    &kp P     &dance_
-&kp LEFT_SHIFT       &kp A  &kp S  &kp D                &kp F               &kp G        &kp H         &kp J      &kp K          &kp L    &kp SEMI  &kp SQT
-&mt LCTRL LG(SPACE)  &kp Z  &kp X  &kp C                &kp V               &kp B        &kp N         &kp M      &kp COMMA      &kp DOT  &kp FSLH  &kp NON_US_BACKSLASH
-                                   &mt LEFT_ALT DELETE  &mt LEFT_GUI SPACE  &lt 2 TAB    &lt 1 ESCAPE  &kp ENTER  &kp BACKSPACE
+&kp GRAVE            &kp Q  &kp W  &kp E                &kp R       &kp T        &kp Y         &kp U      &kp I          &kp O    &kp P     &dance_
+&kp LEFT_SHIFT       &kp A  &kp S  &kp D                &kp F       &kp G        &kp H         &kp J      &kp K          &kp L    &kp SEMI  &kp SQT
+&mt LCTRL LG(SPACE)  &kp Z  &kp X  &kp C                &kp V       &kp B        &kp N         &kp M      &kp COMMA      &kp DOT  &kp FSLH  &kp NON_US_BACKSLASH
+                                   &mt LEFT_ALT DELETE  &space_win  &lt 2 TAB    &lt 1 ESCAPE  &kp ENTER  &kp BACKSPACE
             >;
         };
 
